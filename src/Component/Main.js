@@ -113,6 +113,8 @@ function Main() {
         
         
       </Stack>
+
+      <Typography variant='h3' sx={{textAlign:"center", justifyContent:"center", pt:"150px", display:{ xs: data.length == 0 ? 'block':"none", md: data.length == 0 ? 'block':"none"}}}>Please wait, data loading</Typography>
       <Grid container spacing={{ xs: 3, sm:4,  md: 3 }} columns={{ xs: 4, sm: 8, md: 12 }} >
         {
           data
