@@ -57,7 +57,7 @@ function Main() {
 
 
   useEffect(()=>{
-    axios.get('https://dummyjson.com/producs').then((res)=>{
+    axios.get('https://dummyjson.com/products').then((res)=>{
       console.log(res.data.products)
       setData(res.data.products)
       
