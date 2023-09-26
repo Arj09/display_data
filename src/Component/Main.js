@@ -57,7 +57,7 @@ function Main() {
 
 
   useEffect(()=>{
-    axios.get('https://dummyjson.com/products').then((res)=>{
+    axios.get('https://dummyjson.com/producs').then((res)=>{
       console.log(res.data.products)
       setData(res.data.products)
       
@@ -72,6 +72,8 @@ function Main() {
   const category = () => {
     return [...new Set(data.map((user) => user.category))];
   };
+
+  
   
 
   const handleExpand = (id)=>{
